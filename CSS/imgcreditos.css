@@ -1,0 +1,299 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Serif", serif;
+}
+body{
+  background-color: #E3E3E3;
+}
+.interface{
+  max-width: 1280px;
+  margin: 0 25px;
+}
+/* configuraÃ§Ã£o do botÃ£o no geral */
+header .btn-contato button{
+  width: 120px;
+  height: 35px;
+  font-size: 18;
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer;
+  transition: .4s;
+}
+/* estilo do header */
+header{
+  /* centralizar */
+  width: 100%;
+  padding: 40px 15px;
+  /* transparencia */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  transition: .5s;
+}
+/* organiÃ§Ã£o da estrutura */
+header .interface{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* estilo do logo */
+header .logo img{
+  max-width: 42px;
+}
+/* Estilo do Menu dinamico */
+header .logo img .pata-branca{
+  display: none;
+}
+header.rolar{
+  background-color: #000;
+  padding: 20px 0;
+  box-shadow: 0 0 8px #ffffff8a;
+}
+header.rolar .menu-desktop nav ul li a{
+  color: #fff;
+}
+header.rolar .btn-contato button{
+  border: 1px solid #fff;
+  color: #fff;
+}
+header.rolar .btn-contato button:hover{
+  background-color: #fff;
+  color: #000;
+}
+header.rolar .logo .pata-preta{
+  display: none;
+}
+header .logo .pata-branca{
+  display: none;
+}
+header .logo .pata-preta{
+  display: block;
+}
+header.rolar .logo .pata-branca{
+  display: block;
+}
+/* ----------------------- */
+/* tirar as bolihnha */
+header .menu-desktop nav ul{
+  list-style-type: none;
+}
+/* configurando os links */
+header .menu-desktop nav ul li{
+  display: inline-block;
+  margin: 0 22px;
+}
+header .menu-desktop nav ul li a{
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+/* pequeno zoom/links */
+header .menu-desktop nav a:hover{
+  transform: scale(1.08);
+}
+/* configurando o botÃ£o/cabeÃ§alho */
+header .btn-contato button:hover{
+  background-color: black;
+  color: #fff;
+}
+/* estilo da pagina-inicial */
+/* section.pagina-inicial{
+  height: 98vh;
+  background-image: url("../imagens/bank_funto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+/* centralizando pagina-inicial/interface para o centro */
+.pagina-inicial .interface{
+  display: flex;
+  align-items: center;
+  height: 60%;
+  color: #fff;
+}
+/* configurando o titulo/inicio */
+.pagina-inicial .text-inicial h1{
+  font-size: 2em;
+  line-height: 35px;
+  font-weight: 300;
+}
+.pagina-inicial .text-inicial h1 span{
+  display: block;
+  font-weight: 800;
+}
+.pagina-inicial .text-inicial p{
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 200;
+  margin: 15px 0;
+}
+.pagina-inicial .text-inicial p span{
+  display: block;
+}
+/* estilo da fonte do texto */
+.fonte-txt{
+  margin-left: 55%;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* estilo das apresentaÃ§oes */
+section.apresentacao{
+  padding: 60px 0;
+}
+/* estilizar os blocos de itens */
+.apresentacao .itens-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  margin-bottom: 90px;
+}
+/* estilizando as imagens */
+/* .apresentacao .itens-container .img-itens img{
+  max-width: 270px;
+} */
+/* estilazando os titulos */
+.apresentacao .itens-container .txt-itens h3{
+  font-size: 2em;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.apresentacao .itens-container .txt-itens h3 span{
+  font-weight: 250;
+}
+/* estilo do rodapÃ© */
+footer{
+  background-color: black;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+}
+/* parte de cima/icones */
+footer .top-footer button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: .5s;
+/* margin: 0 10px; */
+}
+footer .top-footer button:hover{
+  background-color: #fff;
+  color: #000;
+}
+/* parte do meio/links */
+footer .middle-footer  a button {
+  margin: 20px 0; 
+  text-decoration: none;
+  justify-content: space-between;
+
+}
+footer .middle-footer button{
+  width: 150px;
+  height: 40px;
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 85%;
+  cursor: pointer;
+  transition: .5s;
+}
+footer .middle-footer button:hover{
+  background-color:#fff;
+  color: #000;
+  cursor: pointer;
+  transition: .5s;
+  
+}
+/* parte de baixo */
+footer .bottom-footer{
+  border-top: 2px solid #fff;
+}
+footer .bottom-footer p{
+  color: #fff;
+  margin-top: 10px;
+}
+/* separando os botoes */
+footer .middle-footer a {
+  margin: 0 200px; 
+}
+/* pÃ¡gina Orienta */
+.pagina-inicial .interface{
+  display: flex;
+  align-items: center;
+  height: 60%;
+  color: #fff;
+}
+section.orietacao{
+  padding: 100px 40px;
+}
+/* estilizar os blocos de itens */
+.orietacao .itens-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* estilazando os titulos */
+.orietacao .itens-container .txt-itens h1{
+  font-size: 2em;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.orietacao .itens-container .txt-itens h1 span{
+  font-weight: 250;
+  display: block;
+}
+/* estilazando as listas/ul */
+.orietacao .itens-container .txt-itens ul li p{
+  margin-bottom: 30px;
+}
+.orietacao .itens-container .txt-itens ul li p{
+  text-align: justify;
+  text-justify: inter-word;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px; 
+}
+
+/* Contêiner interno que alinha as colunas */
+.container-interno {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+/* Estilo para a coluna esquerda */
+.colunaEsquerda {
+  text-align: center;
+  width: 45%;
+}
+
+/* Estilo para a coluna direita */
+.colunaDireita {
+  text-align: center;
+  width: 45%;
+}
+/* Estilo para as imagens e textos dentro das colunas */
+.colunaEsquerda img, .colunaDireita img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px; 
+}
+.colunaEsquerda p, .colunaDireita p {
+  margin: 0 auto;
+  font-weight: bold;
+  margin: 5px 0 15px
+}
