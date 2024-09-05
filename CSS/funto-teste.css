@@ -11,8 +11,8 @@ body{
   max-width: 1280px;
   margin: 0 25px;
 }
-/* configuraÃ§Ã£o do botÃ£o no geral */
-header .btn-contato button{
+/* configuração do botão no geral */
+/* header .btn-contato button{
   width: 120px;
   height: 35px;
   font-size: 18;
@@ -21,7 +21,7 @@ header .btn-contato button{
   color: #fff;
   cursor: pointer;
   transition: .4s;
-}
+} */
 /* estilo do header */
 header{
   /* centralizar */
@@ -31,13 +31,12 @@ header{
   position: fixed;
   top: 0;
   left: 0;
-
   transition: .5s;
 }
-/* organiÃ§Ã£o da estrutura */
+/* organição da estrutura */
 header .interface{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 /* estilo do logo */
@@ -45,7 +44,7 @@ header .logo img{
   max-width: 42px;
 }
 /* Estilo do Menu dinamico */
-header .logo img .pata-preta{
+header .logo img .logo-preta{
   display: none;
 }
 header.rolar{
@@ -56,24 +55,21 @@ header.rolar{
 header.rolar .menu-desktop nav ul li a{
   color: #000;
 }
-header.rolar .btn-contato button{
+/* header.rolar .btn-contato button{
   border: 1px solid #000;
   color: #000;
 }
 header.rolar .btn-contato button:hover{
   background-color: #000;
   color: #fff;
-}
-header.rolar .logo .pata-branca{
+} */
+header.rolar .logo .logo-branca{
   display: none;
 }
-header .logo .pata-preta{
+header .logo .logo-preta{
   display: none;
 }
-header .logo .pata-branca{
-  display: block;
-}
-header.rolar .logo .pata-preta{
+header.rolar .logo .logo-preta{
   display: block;
 }
 /* ----------------------- */
@@ -96,11 +92,11 @@ header .menu-desktop nav ul li a{
 header .menu-desktop nav a:hover{
   transform: scale(1.08);
 }
-/* configurando o botÃ£o/cabeÃ§alho */
-header .btn-contato button:hover{
+/* configurando o botão/cabeçalho */
+/* header .btn-contato button:hover{
   background-color: black;
   color: #fff;
-}
+} */
 /* estilo da pagina-inicial */
 section.pagina-inicial{
   height: 98vh;
@@ -141,7 +137,7 @@ section.pagina-inicial{
   font-size: 18px;
   font-weight: bold;
 }
-/* estilo das apresentaÃ§oes */
+/* estilo das apresentaçoes */
 section.apresentacao{
   padding: 60px 0;
 }
@@ -166,15 +162,15 @@ section.apresentacao{
 .apresentacao .itens-container .txt-itens h3 span{
   font-weight: 250;
 }
-/* estilo do rodapÃ© */
-footer{
+/* estilo do rodapé */
+footer {
   background-color: black;
   width: 100%;
-  padding: 30px 0;
   text-align: center;
+  padding: 30px 0;
 }
 /* parte de cima/icones */
-footer .top-footer button{
+footer .top-footer button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -183,87 +179,78 @@ footer .top-footer button{
   color: #fff;
   font-size: 24px;
   cursor: pointer;
-  transition: .5s;
-/* margin: 0 10px; */
+  transition: background-color 0.5s, color 0.5s;
+  margin: 0 10px; 
 }
-footer .top-footer button:hover{
+footer .top-footer button:hover {
   background-color: #fff;
   color: #000;
 }
 /* parte do meio/links */
-footer .middle-footer  a button {
-  margin: 20px 0; 
-  text-decoration: none;
+footer .middle-footer {
+  display: flex;
   justify-content: space-between;
-
+  align-items: center; 
+  padding: 0 20px; 
+  margin-top: 20px; 
 }
-footer .middle-footer button{
+footer .middle-footer ul li {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+footer .middle-footer ul li {
+color: #fff;   
+} 
+footer .middle-footer ul li a {
+  color: #cac8c8
+}
+footer .middle-footer ul li a:hover{
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: rgba(236, 175, 62, 0.733);
+}
+footer .middle-footer ul li {
+  margin: 10px 0; 
+}
+footer .middle-footer .list-title {
+  display: block;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px; 
+}
+footer .middle-footer a {
+  text-decoration: none; 
+  color: #fff; 
+}
+footer .middle-footer a:hover {
+  color: #ddd; 
+}
+footer .middle-footer button {
   width: 150px;
   height: 40px;
   background-color: #000;
   border: 1px solid #fff;
   color: #fff;
   font-size: 18px;
-  margin-left: 85%;
-  cursor: pointer;
-  transition: .5s;
+  margin: 20px auto 0; 
+  display: block; 
 }
-footer .middle-footer button:hover{
-  background-color:#fff;
+footer .middle-footer button:hover {
+  background-color: #fff;
   color: #000;
   cursor: pointer;
-  transition: .5s;
-  
+  transition: background-color 0.5s, color 0.5s;
 }
 /* parte de baixo */
-footer .bottom-footer{
+footer .bottom-footer {
   border-top: 2px solid #fff;
 }
-footer .bottom-footer p{
+footer .bottom-footer p {
   color: #fff;
   margin-top: 10px;
 }
-/* separando os botoes */
-footer .middle-footer a {
-  margin: 0 200px; 
-}
-/* pÃ¡gina Orienta */
-.pagina-inicial .interface{
-  display: flex;
-  align-items: center;
-  height: 60%;
-  color: #fff;
-}
-section.orietacao{
-  padding: 100px 40px;
-}
-/* estilizar os blocos de itens */
-.orietacao .itens-container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-/* estilazando os titulos */
-.orietacao .itens-container .txt-itens h1{
-  font-size: 2em;
-  line-height: 60px;
-  margin-bottom: 20px;
-}
-.orietacao .itens-container .txt-itens h1 span{
-  font-weight: 250;
-  display: block;
-}
-/* estilazando as listas/ul */
-.orietacao .itens-container .txt-itens ul li p{
-  margin-bottom: 30px;
-}
-.orietacao .itens-container .txt-itens ul li p{
-  text-align: justify;
-  text-justify: inter-word;
-}
-.game {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  padding: 200px 0;
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }

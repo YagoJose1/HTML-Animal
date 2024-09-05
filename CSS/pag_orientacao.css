@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Serif", serif;
+}
+body {
+  background-color: #e3e3e3;
+}
+.interface {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 20px;  
+}
+/* Cabeçalho */
+header {
+  width: 100%;
+  padding: 40px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent; /* Pode ajustar conforme necessário */
+  transition: .5s;
+}
+header .interface {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .logo img {
+  max-width: 42px;
+}
+header .menu-desktop nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+header .menu-desktop nav ul li {
+  display: inline-block;
+  margin: 0 22px;
+}
+header .menu-desktop nav ul li a {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+header .menu-desktop nav a:hover {
+  transform: scale(1.08);
+}
+header .btn-contato button {
+  width: 120px;
+  height: 35px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer;
+  transition: .4s;
+}
+header .btn-contato button:hover {
+  background-color: black;
+  color: #fff;
+}
+/* estilo dinâmico */
+header .logo img .pata-branca{
+  display: none;
+}
+header.rolar{
+  background-color: #000;
+  padding: 20px 0;
+  box-shadow: 0 0 8px #ffffff8a;
+}
+header.rolar .menu-desktop nav ul li a{
+  color: #fff;
+}
+header.rolar .btn-contato button{
+  border: 1px solid #fff;
+  color: #fff;
+}
+header.rolar .btn-contato button:hover{
+  background-color: #fff;
+  color: #000;
+}
+header.rolar .logo .pata-preta{
+  display: none;
+}
+header .logo .pata-branca{
+  display: none;
+}
+header .logo .pata-preta{
+  display: block;
+}
+header.rolar .logo .pata-branca{
+  display: block;
+}
+/* estilo dinâmico */
+/* Configuração do título */
+.pagina-inicial .text-inicial h1 {
+  font-size: 2em;
+  line-height: 1.2; 
+  font-weight: 300;
+  margin: 160px 0 20px; /* Margem superior aumentada para distância do cabeçalho */
+  display: inline-block; 
+  padding: 20px;  
+  border: 2px solid #333; 
+  border-radius: 8px; 
+  text-align: center; 
+  transition: .4s;
+}
+.pagina-inicial .text-inicial h1:hover{
+  background-color: #333;
+  color: #fff
+}
+.pagina-inicial .text-inicial h1 span {
+  display: block;
+  font-weight: 600;
+}
+/* Configuração dos itens da lista */
+.itens-container {
+  padding: 20px; 
+}
+.txt-itens ul {
+  list-style-type: disc; 
+  padding-left: 20px;     
+  margin: 0; 
+}
+.txt-itens ul li {
+  margin-bottom: 15px; 
+}
+.txt-itens ul li p {
+  margin: 0; 
+  color: #333; 
+  font-size: 16px; 
+  line-height: 1.6; 
+}
+/* estilo do rodapé */
+footer {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+/* Parte de cima/icones */
+footer .top-footer button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: .5s;
+  margin: 0 auto; 
+}
+footer .top-footer button:hover{
+  background-color: #fff;
+  color: #000;
+}
+/* Parte do meio/links */
+footer .middle-footer {
+  display: flex;
+  justify-content: space-between; 
+  padding: 0 20px; 
+  margin: 20px 0;
+}
+footer .middle-footer button {
+  width: 150px;
+  height: 40px;
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  transition: .5s;
+}
+footer .middle-footer button:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: .5s;
+}
+/* Parte de baixo */
+footer .bottom-footer {
+  border-top: 2px solid #fff;
+}
+footer .bottom-footer p {
+  color: #fff;
+  margin-top: 10px;
+}
